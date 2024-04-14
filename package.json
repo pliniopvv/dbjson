@@ -1,9 +1,9 @@
 {
   "name": "pvvdb",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "bin": {
-    "dbjson": "./index.js"
+    "pvvdb": "./index.js"
   },
   "main": "index.js",
   "scripts": {

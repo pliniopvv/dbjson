@@ -2,6 +2,7 @@
 
 const express = require("express");
 const app = express();
+const PORT = 3001;
 
 const db = [];
 
@@ -73,4 +74,4 @@ app.use("/:obj", (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log("Ouvindo na porta 3000"));
+app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
