@@ -17,11 +17,11 @@ Não foi realizada verificação se os objetos possuem o parâmetro `id`, porém
 
 # Rotas disponíveis
 - GET
-  - `/obj`
-  - `/obj/id`
+  - `/obj` - Retorna todos os objetos deste tipo;
+  - `/obj/id` - Retorna o objeto com o `id` solicitado
 - POST
-  - `/obj` c/ body `json`
+  - `/obj` c/ body `json` - Armazena o objeto no banco.
 - PUT
-  - `/obj/id` c/ body `json`
+  - `/obj/id` c/ body `json` - Altera o objeto com o id no banco.
 - DELETE
-  - `/obj/id`
+  - `/obj/id` - Remove o objeto cujo `id` é igual ao fornecido.
