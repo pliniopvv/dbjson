@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const express = require("express");
+const cors = require('cors');
 const app = express();
 const PORT = 3001;
 
@@ -9,6 +10,7 @@ const db = [];
 // const log = console.log
 const log = () => {};
 
+app.use(cors());
 app.use(express.json());
 
 app.use("/:obj/:id", (req, res) => {
