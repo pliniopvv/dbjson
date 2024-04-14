@@ -1,11 +1,11 @@
-// index.js
-// #!/usr/bin/env node
+#!/usr/bin/env node
 
 const express = require("express");
 const app = express();
 
 const db = [];
 
+// const log = console.log
 const log = () => {};
 
 app.use(express.json());
@@ -73,4 +73,4 @@ app.use("/:obj", (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Ouvindo na porta 3000"));
+app.listen(3001, () => console.log("Ouvindo na porta 3000"));
