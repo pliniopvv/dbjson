@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 const express = require("express");
-const cors = require('cors');
+const cors = require("cors");
 const app = express();
 const PORT = 3001;
 
 const db = [];
 
-// const log = console.log
-const log = () => {};
+const log = console.log
+// const log = () => {};
 
 app.use(cors());
 app.use(express.json());
@@ -70,7 +70,7 @@ app.use("/:obj", (req, res) => {
       break;
     case "POST":
       list.push(req.body);
-      res.status(202).send("Armazenado.");
+      res.send("Armazenado.");
       log(db);
       break;
   }
