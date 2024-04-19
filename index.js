@@ -46,6 +46,7 @@ app.use("/:obj/:id", (req, res) => {
     case "PUT":
       let _obj = list.find((e) => e.id == id);
       list.splice(list.indexOf(_obj), 1, req.body);
+      res.sendStatus(204);
       log(db);
       break;
   }
